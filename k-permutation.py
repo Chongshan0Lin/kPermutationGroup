@@ -57,7 +57,12 @@ class kPermutaionGroup(object):
     def printPermutationGroup(self, k):
         for i in self.permk(k):
             print(self.permToCycle(i))
+    
+    def printPermutationGroupWithPositiveSign(self, k):
+        for i in self.permk(k):
+                print(self.permToCycle(i))
+
 
 
 g = kPermutaionGroup()
-g.printPermutationGroup(2)
+g.printPermutationGroup(4)
